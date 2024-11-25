@@ -1178,7 +1178,7 @@ end)
 local Button = MainTab:CreateButton({
    Name = "Arsenal nexaware",
    Callback = function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/DatMxkey/Nexware/main/loader.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/c4shhh/arsenal/main/arbenal"))()
    end,
 })
 
@@ -1203,6 +1203,36 @@ local Button = OtherTab:CreateButton({
    Name = "Moon UI v10",
    Callback = function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/IlikeyocutgHAH12/MoonUI-v10-/main/MoonUI%20v10'))()
+   end,
+})
+
+local MainTab = Window:CreateTab("Arsenal", 13412203277) -- Title, Image
+
+local Button = MainTab:CreateButton({
+   Name = "Untitled Arsenal Script",
+   Interact = 'Click Me Nigga',
+   Callback = function()
+ loadstring(game:HttpGet("https://raw.githubusercontent.com/c4shhh/arsenal/main/arbenal"))()
+   end,
+})
+
+local Button = MainTab:CreateButton({
+   Name = "Arsenal Script 2",
+   Interact = 'Click Me Nigga',
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/c4shhh/arsenal/main/arbenal"))()
+   end,
+})
+
+local OtherTab = Window:CreateTab("Phantom Forces", 18378315812) -- Title, Image
+
+local Button = OtherTab:CreateButton({
+   Name = "Phantom Forces",
+   Interact = 'Click Me Nigga',
+   Callback = function()
+  loadstring(game:HttpGet("https://scriptblox.com/raw/Universal-Script-unfair-Hub-3936"))()
+   end,
+})
    end,
 })
 
