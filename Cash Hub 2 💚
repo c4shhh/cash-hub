@@ -1249,9 +1249,10 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/Zinzs/luascripting/ma
 })
 
 local Button = dhTab:CreateButton({
-   Name = "Polara",
+   Name = "Aghat  🤤",
    Callback = function()
-
+getgenv().Version = "1"
+loadstring(game:HttpGet('https://raw.githubusercontent.com/okoito/Aghat/refs/heads/main/Aghat', true))()
    end,
 })
 
@@ -1267,13 +1268,35 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/AnnaRoblox/AnnaBypass
 })
 
 local Dropdown = mainTab:CreateDropdown({
-   Name = "ESP's  🖇",
-   Options = {"💦 Fun","Option 2"},
+   Name = "Socials  📱",
+   Options = {" 💜  Instagram: tha.realstunnajit"," 💙  Discord: dsc.gg/fjeg"},
    CurrentOption = {" "},
    MultipleOptions = false,
    Flag = "Dropdown1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
    Callback = function(Options)
-loadstring(game:HttpGet("https://raw.githubusercontent.com/c4shhh/cash-hub/refs/heads/main/Fluent%20Gui%20(skidding)",true))()
    -- The variable (Options) is a table of strings for the current selected options
+   end,
+})
+
+local Button = ohTab:CreateButton({
+   Name = "Dexter Bypasser  🩸",
+   Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/XE3Exploits/Dextahh/refs/heads/main/Dexter%20Bypass",true))()
+   end,
+})
+
+
+local Button = ohTab:CreateButton({
+   Name = "Jerk Off  💦 ",
+   Callback = function()
+loadstring(game:HttpGet("https://pastefy.app/wa3v2Vgm/raw"))()
+   end,
+})
+
+
+local Button = ohTab:CreateButton({
+   Name = "Cat Bypasser  🐱",
+   Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/shadow62x/catbypass/main/upfix"))()
    end,
 })
