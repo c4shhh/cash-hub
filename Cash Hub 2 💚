@@ -1257,6 +1257,8 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/okoito/Aghat/refs/hea
    end,
 })
 
+local Label = dhTab:CreateLabel("Ping Resolver", 11219113259, Color3.fromRGB(255, 255, 255), false) -- Title, Icon, Color, IgnoreTheme
+
 local ohTab = Window:CreateTab("Bypasser's", 111123681423981) -- Title, Image
 
 local Section = ohTab:CreateSection("ⓘ These Are Chat Bypasser's Which Allow You To Curse In Game.")
@@ -1268,7 +1270,8 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/AnnaRoblox/AnnaBypass
    end,
 })
 
-local Divider = mainTab:CreateDivider()
+local Label = mainTab:CreateLabel("Other", 11219113259, Color3.fromRGB(255, 255, 255), false) -- Title, Icon, Color, IgnoreTheme
+
 
 local Dropdown = mainTab:CreateDropdown({
    Name = "Socials  📱",
@@ -1316,7 +1319,6 @@ local Input = mainTab:CreateInput({
    end,
 })
 
-local Divider = mainTab:CreateDivider()
 
 local Toggle = mainTab:CreateToggle({
    Name = "Lag Server  🧪",
@@ -1331,7 +1333,7 @@ local Toggle = mainTab:CreateToggle({
 
 local doorsTab = Window:CreateTab("Doors", "door-closed")
 
-local Section = doorsTab:CreateSection("ⓘ Door's Scripts")
+local Section = doorsTab:CreateSection("ⓘ Door's Scripts Which Allow You To See Monsters, Etc.")
 
 local Button = doorsTab:CreateButton({
    Name = "Sensation V2  👁",
@@ -1347,7 +1349,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Vynixiu
    end,
 })
 
-local Divider = trollTab:CreateDivider()
+local Label = trollTab:CreateLabel("Speed, And Jump Strength.", 11219113259, Color3.fromRGB(255, 255, 255), false) -- Title, Icon, Color, IgnoreTheme
 
 local Slider = trollTab:CreateSlider({
    Name = "Jump Strength  👆",
@@ -1359,5 +1361,47 @@ Range = {50, 250},
    Callback = function(Value)
         game.Players.LocalPlayer.Character.Humanoid.JumpPower = (Value)
    end,
+})
+
+local Slider = trollTab:CreateSlider({
+   Name = "Walkspeed  💨",
+   Range = {10, 300},
+   Increment = 1,
+   Suffix = "Speed",
+   CurrentValue = 16,
+   Flag = "Slider1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+   Callback = function(Value)
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = (Value)
+   end,
+})
+
+
+local Toggle = dhTab:CreateToggle({
+   Name = "Low Input Delay  💫",
+   CurrentValue = false,
+   Flag = "Toggle1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+   Callback = function(Value)
+
+   end,
+})
+
+local Toggle = dhTab:CreateToggle({
+   Name = "Low Latency  🌐",
+   CurrentValue = false,
+   Flag = "Toggle1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+   Callback = function(Value)
+   -- The function that takes place when the toggle is pressed
+   -- The variable (Value) is a boolean on whether the toggle is true or false
+   end,
+})
+
+local ColorPicker = trollTab:CreateColorPicker({
+    Name = "Color Picker  🎨",
+    Color = Color3.fromRGB(255,255,255),
+    Flag = "ColorPicker1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+    Callback = function(Value)
+        -- The function that takes place every time the color picker is moved/changed
+        -- The variable (Value) is a Color3fromRGB value based on which color is selected
+    end
 })
 
