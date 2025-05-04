@@ -1242,8 +1242,15 @@ Rayfield:Notify({
 })
 
 local Button = dhTab:CreateButton({
-   Name = "Crimskid  🖍",
+   Name = "Zinc  🖍",
    Callback = function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/FarmyScript/Dahood-GUI-/main/README.md"))()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Zinzs/luascripting/main/canyoutellitsadahoodscriptornot.lua'))()
+   end,
+})
+
+local Button = dhTab:CreateButton({
+   Name = "Why Not Gui❓",
+   Callback = function()
+loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Margman/whynot/main/Da%20hood%20script%202022"))()
    end,
 })
