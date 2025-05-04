@@ -1,4 +1,4 @@
-local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/c4shhh/cash-hub/refs/heads/main/RayField%20Ui%20%F0%9F%92%AB'))()
 
 local Window = Rayfield:CreateWindow({
    Name = "Cash Hub V2 💲",
