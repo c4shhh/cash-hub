@@ -1249,8 +1249,31 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/Zinzs/luascripting/ma
 })
 
 local Button = dhTab:CreateButton({
-   Name = "Zapped Gui  🕳",
+   Name = "Polara",
    Callback = function()
-loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Margman/whynot/main/Da%20hood%20script%202022"))()
+
+   end,
+})
+
+local ohTab = Window:CreateTab("Bypasser's", 111123681423981) -- Title, Image
+
+local Section = ohTab:CreateSection(" ")
+
+local Button = ohTab:CreateButton({
+   Name = "Anna Bypasser  👧",
+   Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/AnnaRoblox/AnnaBypasser/refs/heads/main/AnnaBypasser.lua",true))()
+   end,
+})
+
+local Dropdown = mainTab:CreateDropdown({
+   Name = "ESP's  🖇",
+   Options = {"💦 Fun","Option 2"},
+   CurrentOption = {" "},
+   MultipleOptions = false,
+   Flag = "Dropdown1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+   Callback = function(Options)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/c4shhh/cash-hub/refs/heads/main/Fluent%20Gui%20(skidding)",true))()
+   -- The variable (Options) is a table of strings for the current selected options
    end,
 })
