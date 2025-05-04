@@ -3,33 +3,33 @@ local SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/A
 local InterfaceManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/ActualMasterOogway/Fluent-Renewed/master/Addons/InterfaceManager.luau"))()
 
 local w = lib:CreateWindow{
-    Title = "💦 Fun",
-    SubTitle = "by @fjeg",
+    Title = "Dig The Backyard  🎒",
+    SubTitle = "   by @fjeg",
     TabWidth = 160,
     Size = UDim2.fromOffset(830, 525),
     Resize = true,
     MinSize = Vector2.new(470, 380),
     Acrylic = true,
-    Theme = "Light",
+    Theme = "Dark",
     MinimizeKey = Enum.KeyCode.LeftControl
 }
 
 local Tabs = {
     Main = w:CreateTab{
         Title = "Main",
-        Icon = "align-justify"
+        Icon = "circle-dollar-sign"
     },
     Player = w:CreateTab{
         Title = "Player",
-        Icon = "user"
+        Icon = "circle-user"
     },
     Teleports = w:CreateTab{
         Title = "Teleports",
-        Icon = "phosphor-map-pin-bold"
+        Icon = "map-pinned"
     },
     Esp = w:CreateTab{
         Title = "ESP",
-        Icon = "eye"
+        Icon = "scan-eye"
     },
     Settings = w:CreateTab{
         Title = "Settings",
@@ -54,7 +54,7 @@ local lastPos
 -- // Main
 
 Tabs.Main:CreateButton{
-    Title = "Auto Pickup Lootbag",
+    Title = "Auto Pickup Lootbag 💰",
     Description = "",
     Callback = function ()
         lastPos = humPart.CFrame
@@ -77,7 +77,7 @@ Tabs.Main:CreateButton{
 }
 
 Tabs.Main:CreateParagraph("Paragraph", {
-    Title = "Ores",
+    Title = " -- ",
     Content = ""
 })
 
@@ -97,7 +97,7 @@ Tabs.Main:CreateButton{
 }
 
 Tabs.Main:CreateParagraph("Paragraph", {
-    Title = "Cake",
+    Title = "--",
     Content = ""
 })
 
