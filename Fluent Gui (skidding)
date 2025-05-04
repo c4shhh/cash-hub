@@ -3,14 +3,14 @@ local SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/A
 local InterfaceManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/ActualMasterOogway/Fluent-Renewed/master/Addons/InterfaceManager.luau"))()
 
 local w = lib:CreateWindow{
-    Title = "Dig the Backyard",
+    Title = "💦 Fun",
     SubTitle = "by @fjeg",
     TabWidth = 160,
     Size = UDim2.fromOffset(830, 525),
     Resize = true,
     MinSize = Vector2.new(470, 380),
     Acrylic = true,
-    Theme = "Dark",
+    Theme = "Light",
     MinimizeKey = Enum.KeyCode.LeftControl
 }
 
