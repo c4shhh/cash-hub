@@ -4,7 +4,7 @@ local InterfaceManager = loadstring(game:HttpGet("https://raw.githubusercontent.
 
 local w = lib:CreateWindow{
     Title = "Dig the Backyard",
-    SubTitle = "by t.me/arceusxscripts",
+    SubTitle = "by @fjeg",
     TabWidth = 160,
     Size = UDim2.fromOffset(830, 525),
     Resize = true,
