@@ -36,12 +36,13 @@ local Window = Rayfield:CreateWindow({
 
 local mainTab = Window:CreateTab(" Arsenal  ", 4503256563) -- Title, Image
 
-local Section = mainTab:CreateSection(" ")
+local Section = mainTab:CreateSection("ⓘ Fun, Undetected, Sleek Arsenal Scripts.")
 
 local Button = mainTab:CreateButton({
    Name = "Cash Hub  Arsenal   💣                                                                                                                                                                                            ᴾᵒᵖᵘˡᵃʳ",
    Callback = function()
 wait(1)
+
 
 local Camera = workspace.CurrentCamera
 local uis = game:GetService("UserInputService")
@@ -1193,7 +1194,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/c4shhh/arsenal/refs/h
 
 local trollTab = Window:CreateTab("Trolling", 2062751426) -- Title, Image
 
-local Section = trollTab:CreateSection(" ")
+local Section = trollTab:CreateSection("ⓘ Trolling Gui's That Work In Any Sandbox Game.")
 
 local Button = trollTab:CreateButton({
    Name = "Sander XY  🌌                                                                                                                                                                                            ᴾᵒᵖᵘˡᵃʳ",
@@ -1258,7 +1259,7 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/okoito/Aghat/refs/hea
 
 local ohTab = Window:CreateTab("Bypasser's", 111123681423981) -- Title, Image
 
-local Section = ohTab:CreateSection(" ")
+local Section = ohTab:CreateSection("ⓘ These Are Chat Bypasser's Which Allow You To Curse In Game.")
 
 local Button = ohTab:CreateButton({
    Name = "Anna Bypasser  👧",
@@ -1318,7 +1319,7 @@ local Input = mainTab:CreateInput({
 local Divider = mainTab:CreateDivider()
 
 local Toggle = mainTab:CreateToggle({
-   Name = "Unload Scripts  ⚠",
+   Name = "Lag Server  🧪",
    CurrentValue = false,
    Flag = "Toggle1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
    Callback = function(Value)
@@ -1327,14 +1328,36 @@ local Toggle = mainTab:CreateToggle({
    end,
 })
 
+
 local doorsTab = Window:CreateTab("Doors", "door-closed")
 
-local Section = doorsTab:CreateSection("  ")
+local Section = doorsTab:CreateSection("ⓘ Door's Scripts")
 
 local Button = doorsTab:CreateButton({
    Name = "Sensation V2  👁",
    Callback = function()
 loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/730854e5b6499ee91deb1080e8e12ae3.lua"))()
+   end,
+})
+
+local Button = doorsTab:CreateButton({
+   Name = "Vynixu  💛",
+   Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Vynixius/main/Doors/Script.lua"))()
+   end,
+})
+
+local Divider = trollTab:CreateDivider()
+
+local Slider = trollTab:CreateSlider({
+   Name = "Jump Strength  👆",
+Range = {50, 250},
+   Increment = 10,
+   Suffix = " ",
+   CurrentValue = 50,
+   Flag = "Slider1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+   Callback = function(Value)
+        game.Players.LocalPlayer.Character.Humanoid.JumpPower = (Value)
    end,
 })
 
